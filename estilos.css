@@ -1,0 +1,692 @@
+/* ==========================================
+   CONFIGURACION GENERAL
+   ========================================== */
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;} 
+
+html{scroll-behavior: smooth;}
+
+body{background: #020817;
+color: white;
+font-family: Arial, Helvetica, sans-serif;}
+
+#container{width: 100%;
+margin: 0;}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+header{height: 80px;
+width: 100%;
+background: #020817;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 6%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+position: sticky;
+top: 0;
+z-index: 1000;}
+
+/* LOGO */
+
+.logo{display: flex;
+flex-direction: column;}
+
+.logo span{font-size: 20px;
+font-weight: bold;
+font-style: italic;}
+
+.logo small{font-size: 8px;
+letter-spacing: 2px;
+color: #087FF5;}
+
+/* ==========================================
+   NAV
+   ========================================== */
+
+nav ul{display: flex;
+gap: 30px;
+list-style: none;}
+
+nav ul li a{color: #F5F7FA;
+text-decoration: none;
+font-size: 13px;
+font-weight: bold;
+transition: 0.5s;}
+
+nav ul li a:hover{color: #087FF5;}
+
+/* ==========================================
+   BOTON WHATSAPP
+   ========================================== */
+
+.boton_whats{background: #087FF5;
+color: white;
+padding: 14px 22px;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+border-radius: 10px;
+transition: 0.5s;}
+
+.boton_whats:hover{background: #087FF5;
+transform: translateY(10px);}
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.hero{min-height: 600px;
+    
+background: radial-gradient(
+circle at 80% 50%,rgba(8,127,245,0.2),
+transparent 40%),#020817;
+display: flex;
+align-items: center;
+padding: 80px 8%;
+gap: 50px;}
+
+.hero-text{width:50%;}
+
+.hero-subtitle{color: #087FF5;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 20px;}
+
+.hero h1{font-size: 52px;
+line-height: 1.1;
+margin-bottom: 25px;}
+
+.hero h1 span{color: #087FF5;}
+
+.hero-text > p {color: #A8B0BD;
+font-size: 17px;
+line-height: 1.7;
+max-width: 550px;
+margin-bottom: 30px;}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+
+.boton_whats{display: inline-block;
+border: lightcyan 1px solid;}
+
+.boton_whats:hover{background-color: #020817;}
+
+.hero-buttons{display: flex;
+gap: 15px;}
+
+.boton1{display: inline-block;
+border: 1px solid lightcyan;
+background: hsl(210, 94%, 50%);
+color: white;
+padding: 15px 25px;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+border-radius: 5px;
+transition: 0.5s;}
+
+.boton1:hover{background: #020817;
+transform: translateY(10px);}
+
+.boton2{display: inline-block;
+border: 1px solid #087FF5;
+color: white;
+padding: 15px 25px;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold;
+border-radius: 5px;
+transition: 0.5s;}
+
+.boton2:hover{background: #087FF5;
+transform: translateY(10px);}
+
+/* ==========================================
+   IMAGEN HERO
+   ========================================== */
+
+.hero-image {width: 50%;
+background-image: url("IMAG/hero.png")}
+
+.image-placeholder{height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: first baseline;
+align-items: center;
+color: #087FF5;
+letter-spacing: 3px;}
+
+.image-placeholder span{font-size: 40px;
+font-weight: bold;
+font-style: italic;}
+
+/* ==========================================
+   TITULOS
+   ========================================== */
+
+.section-tittle{text-align: center;
+max-width: 700px;
+margin: 0 auto 50px;}
+
+.section-tittle > p:first-child {
+    color: #087FF5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;}
+
+.section-tittle h2{font-size: 36px;
+margin-bottom: 15px;}
+
+.section-tittle span{display: block;
+width: 50px;
+height: 3px;
+
+background: #087FF5;
+
+margin: 0 auto 20px;}
+
+.section-tittle p:last-child{color: #6B7280;}
+
+/* =========================
+   NUESTROS SERVICIOS
+========================= */
+
+.services{background: #F5F7FA;
+color: #020817;
+padding: 90px 6%;}
+
+.services-container{display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;}
+
+.service-card{background:white;
+text-align: center;
+padding: 30px 20px;
+border-radius: 10px;
+box-shadow: 0 10px 30px
+rgba(0,0,0,1);
+transition: 0.3s;}
+
+.service-card:hover{transform: translateY(10px);}
+
+.service-icon{font-size: 35px;
+margin-bottom: 15px;}
+
+.service-card h3{font-size: 18px;
+margin-bottom: 15px;}
+
+.service-card p{font-size: 14px;
+color: #020817;
+font-weight: bold;
+line-height: 1.6;
+margin-bottom: 20px;}
+
+.service-image{height: 200px;
+width: 100%;
+overflow: hidden;
+border-radius: 8px;
+margin-top: 20px;}
+
+.service-image img{width: 100%;
+height: 100%;
+display: block;
+zoom: 5px;}
+
+/* =========================
+   NUESTROS PROYECTOS
+========================= */
+
+.projects{padding: 90px 6%;}
+
+.projects .section-tittle p:last-child{color: #A8B0BD;}
+
+.project-container{display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;}
+
+.project-card{background: #081226;
+padding-bottom: 20px;
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 10px 10px 10px
+rgba(245,245,245,0.2);}
+
+.project-image{width: 100%;
+height: 330px;
+background: #10213B;
+color: #087FF5;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.project-image img {width: 100%;
+height: 100%;
+object-fit: cover;}
+
+.project-card h3{font-size: 16px;
+padding: 20px 15px 5px;}
+
+.project-card p{font-size: 14px;
+padding: 0 15px;
+color: #087FF5;}
+
+.project-card:hover{transform: translateY(10px);}
+
+/* =========================
+   POR QUÉ ELEGIR MUEBLES RK
+========================= */
+
+.why-us{background: #F5F7FA;
+color: #020817;
+padding: 90px 6%;}
+
+.benefits-container{display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 30px;
+text-align: center;
+box-shadow: 10px 10px 10px 5px #087FF5;}
+
+.benefit{padding: 20px;}
+
+.benefit-icon{font-size: 40px;
+border-bottom: 20px;
+color: #087FF5;
+box-shadow:5px 0 #70a8e0;}
+
+.benefit h3{font-size: 16px;
+margin-bottom: 15px;}
+
+.benefit p{color: #6B7280;
+line-height: 1.6;
+font-size: 14px;}
+
+/* =========================
+   NUESTRO PROCESO
+========================= */
+
+.process{background: #020817;
+padding: 90px 6%;}
+
+.process-container{display: grid;
+grid-template-columns: repeat(5,1fr);
+gap: 20px;
+text-align: center;}
+
+.process-step{padding: 20px;}
+
+.step-number{width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 2px solid #087FF5;
+color: #087FF5;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+margin: 0 auto 20px;
+box-shadow: 5px 0 #23262c;}
+
+.process-step h3{font-size: 15px;
+margin-bottom: 15px;}
+
+.process-step p{font-size: 14px;
+color: #A8B0BD;
+line-height: 1.5;}
+
+/* ==========================================
+   SOMOS MUEBLES RK + CONTACTO
+========================================== */
+
+.split-section{width: 100%;
+display: grid;grid-column: 1fr 1fr;
+min-height: 600px;}
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.about{display:flex;
+width: 100%;
+background: #F5F7FA;
+align-items: center;
+padding: 0px 50px;
+color: #020817;}
+
+.about-text{max-width: 600px;}
+
+.about-text>p:first-child{color: #087FF5;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 15px;}
+
+.about-text h2{font-size: 42px;
+line-height: 1.1;
+margin-bottom: 20px;}
+
+.about-text span{display: block;
+width: 50px;
+height: 3px;
+background: #087FF5;
+margin-bottom: 25px;}
+
+.about-text p{color: #6B7280;
+line-height: 1.7;
+margin-bottom: 20px;}
+
+.boton3{display: inline-block;
+background: #087FF5;
+color: #020817;
+border: 2px solid #020817;
+padding: 16px 30px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;;}
+
+.boton3:hover{background: #F5F7FA;
+transform: translateY(10px);}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contact {background: #087FF5;
+width: 50%;
+color: white;
+display: flex;
+padding: 180px 8%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;}
+
+.contact>p:first-child{font-size: 14px;
+font-weight: bold;
+letter-spacing: 3px;}
+
+.contact h2{font-size: 40px;
+margin: 15px 0;}
+
+.contact p{max-width: 600px;
+margin: 0 auto 30px;
+line-height: 1.6;}
+
+.boton_contacto{display: inline-block;
+background:#F5F7FA;
+color: #020817;
+padding: 16px 30px;
+border-radius: 10px;
+text-decoration: none;
+font-weight: bold;
+border:2px solid #020817;}
+
+.boton_contacto:hover{background: #087FF5;
+transform: translateY(10px);}
+
+/* =========================
+   FOOTER
+========================= */
+footer {background: #020817;
+padding: 60px 6% 20px;
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+gap: 50px;
+color:#F5F7FA;}
+
+.footer-column {padding: 0;
+background: transparent;}
+
+.footer-column h2 {font-size: 24px;
+font-style: italic;
+margin-bottom: 10px;}
+
+.footer-column p1{color: #087FF5;
+font-size: 14px;}
+
+.footer-column h3 {color: #087FF5;
+font-size: 14px;
+margin-bottom: 10px;}
+
+.footer-column p {color: #F5F7FA;
+font-size: 14px;
+margin-bottom: 10px;}
+
+.footer-column h5{color: #F5F7FA;
+margin: 5px;
+font-size: 15px;}
+
+.footer-bottoms{font-size: 14px;}
+
+.footer-bottom {grid-column: 1 / -1;
+text-align: center;
+border-top: 1px solid #1E293B;
+padding-top: 20px;
+margin-top: 20px;
+color: #F5F7FA;
+font-size: 13px;}
+
+.footer-column h51{color: #087FF5;
+line-height: 1;}
+
+.botonig{color: #F5F7FA;
+line-height: 2;}
+
+.botonfb{color: #F5F7FA;
+line-height: 2;}
+
+.boton_contacto1{line-height: 2;
+color: #F5F7FA;}
+
+.boton_contacto2{color: #F5F7FA;
+line-height: 2;}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+/* TABLETS GRANDES */
+@media (max-width: 1200px) {
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .services-container,
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* TABLETS */
+@media (max-width: 992px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* MÓVILES GRANDES / TABLETS PEQUEÑAS */
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+        flex: none;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .services-container,
+    .project-container,
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* SOMOS MUEBLES RK + CONTACTO */
+    .split-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        padding: 60px 30px;
+    }
+
+}
+
+
+/* MÓVILES */
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .boton_whats {
+        padding: 12px 16px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boton1,
+    .boton2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-tittle h2 {
+        font-size: 30px;
+    }
+
+    .services,
+    .projects,
+    .why-us,
+    .process {
+        padding: 60px 20px;
+    }
+
+    /* SOMOS MUEBLES RK */
+    .about-text {
+        padding: 50px 20px;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    /* CONTACTO */
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+}
