@@ -154,7 +154,10 @@ transform: translateY(10px);}
    ========================================== */
 
 .hero-image {width: 50%;
-background-image: url("IMAG/hero.png")}
+background-image: url("IMAG/hero.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;}
 
 .image-placeholder{height: 400px;
 display: flex;
@@ -162,7 +165,8 @@ flex-direction: column;
 justify-content: first baseline;
 align-items: center;
 color: #087FF5;
-letter-spacing: 3px;}
+letter-spacing: 3px;
+text-align: center;}
 
 .image-placeholder span{font-size: 40px;
 font-weight: bold;
@@ -347,7 +351,7 @@ line-height: 1.5;}
 ========================================== */
 
 .split-section{width: 100%;
-display: grid;grid-column: 1fr 1fr;
+display: grid;grid-template-columns: 1fr 1fr;
 min-height: 600px;}
 
 /* =========================
@@ -358,7 +362,8 @@ min-height: 600px;}
 width: 100%;
 background: #F5F7FA;
 align-items: center;
-padding: 0px 50px;
+justify-content: center;
+padding: 80px 8%;
 color: #020817;}
 
 .about-text{max-width: 600px;}
@@ -400,10 +405,10 @@ transform: translateY(10px);}
 ========================= */
 
 .contact {background: #087FF5;
-width: 50%;
+width: 100%;
 color: white;
 display: flex;
-padding: 180px 8%;
+padding: 80px 8%;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -587,6 +592,11 @@ line-height: 2;}
         flex-wrap: wrap;
     }
 
+    .hero-image {
+        width: 100%;
+        min-height: 300px;
+    }
+
     .services-container,
     .project-container,
     .benefits-container {
@@ -604,12 +614,39 @@ line-height: 2;}
 
     .about {
         grid-template-columns: 1fr;
+        text-align: center;
+        padding: 60px 20px;
     }
 
     .about-text {
         padding: 60px 30px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text span {
+        margin: 0 auto 25px; /* Centra la línea azul */
     }
 
+    .contact {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+        padding: 50px 20px 20px;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
